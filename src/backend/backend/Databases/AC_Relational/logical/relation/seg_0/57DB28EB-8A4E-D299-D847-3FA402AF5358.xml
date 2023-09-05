@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="user_goal" directorySegmentName="seg_0" id="57DB28EB-8A4E-D299-D847-3FA402AF5358">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 08:52:28 UTC</createdTime>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<engineerTo>
+<item key="3C2AB0E3-E347-0C1F-91DB-75BA82BFD51D" value="true"/>
+</engineerTo>
+<sourcePk>C5F2306A-6285-DC1E-D33B-6B25362AF75C</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>has</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B1116FC0-A818-F1A3-F094-AB0158DE6FBA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>719FF16F-EB2B-044A-A496-DE564BF6C47F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Attribute_15" id="44521BB2-E7CB-DC77-A4F8-E69E0E7E9774">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 08:53:03 UTC</createdTime>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<engineerTo>
+<item key="3C2AB0E3-E347-0C1F-91DB-75BA82BFD51D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

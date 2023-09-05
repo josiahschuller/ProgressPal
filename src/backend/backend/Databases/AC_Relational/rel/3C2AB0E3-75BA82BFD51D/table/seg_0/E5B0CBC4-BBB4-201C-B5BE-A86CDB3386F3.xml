@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5B0CBC4-BBB4-201C-B5BE-A86CDB3386F3" name="GOAL">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<generatorID>719FF16F-EB2B-044A-A496-DE564BF6C47F</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="goal_id" id="4A7AAEDB-8C0E-B5DD-CBBF-38DDDFD7332F">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Goal id used to identified a specified goal]]></commentInRDBMS>
+<generatorID>FFD1B0B2-2E01-C3BF-A255-B6E98D6E169E</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="goal_name" id="F90017BF-FE47-5669-B0D9-EDFD3B30C430">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Goal name]]></commentInRDBMS>
+<generatorID>86C5CC49-E864-FF34-AB85-A8B618245D31</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="goal_desc" id="FFD0FB4A-21F3-7531-1C1D-250F1FE756C9">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[goal description]]></commentInRDBMS>
+<generatorID>01CE034A-326E-8333-6A65-6AF27280E559</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="goal_initial_state" id="EA2A0696-DF27-DC33-0D91-0D237876A96F">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Initial state of goal, represent by number.]]></commentInRDBMS>
+<generatorID>3466CA63-E9B0-FA15-FCCD-89F9C8295394</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="goal_current_state" id="A0A5CD6C-6BCA-042B-95F7-397C73CE940E">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Current state of goal, represent by number.]]></commentInRDBMS>
+<generatorID>29373EDB-40A5-6677-6E98-CB68DD3CA590</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="goal_date" id="F4CF6622-79B1-E89B-6C92-5EF994B4D255">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date of goal created.]]></commentInRDBMS>
+<generatorID>56FF245F-8FE2-4A84-1CC0-951567313F43</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="14C73F00-A7E9-AAB1-5C8A-065A51C7CF00">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[User id used to identied by one sepecifed user.]]></commentInRDBMS>
+<generatorID>9C76C5BA-5AAD-AD2D-1149-0B5F0BB5BDB2</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA6ED69A-BBAF-AF51-71D9-0BB155CA2D1B" referredColumn="8604EA1D-31CE-51D7-0930-CFDDB917B0E4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB7B5B39-1359-7D03-B28E-7198A3499736" name="GOAL_PK">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<generatorID>D55CD90B-6EA8-80C6-244A-B39162726D86</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A7AAEDB-8C0E-B5DD-CBBF-38DDDFD7332F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="464BB550-0521-78D2-9D04-7B75F82CE056" name="user_goal">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<generatorID>57DB28EB-8A4E-D299-D847-3FA402AF5358</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14C73F00-A7E9-AAB1-5C8A-065A51C7CF00"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

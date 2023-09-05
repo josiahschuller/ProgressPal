@@ -1,0 +1,4 @@
+src/frontend/node_modules
+src/frontend/build
+**/.DS_Storesendgrid.env
+sendgrid.env

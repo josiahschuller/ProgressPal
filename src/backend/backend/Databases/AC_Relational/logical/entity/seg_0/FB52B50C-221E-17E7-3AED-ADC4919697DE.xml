@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FB52B50C-221E-17E7-3AED-ADC4919697DE" name="PASSWORD">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 08:21:47 UTC</createdTime>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<engineerTo>
+<item key="3C2AB0E3-E347-0C1F-91DB-75BA82BFD51D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="password_id" id="9BB4357D-3BEE-8D7F-ED76-6EEABA72E26C">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 08:22:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[The password id is unique and each only identified by one password which belong to one user.]]></commentInRDBMS>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<engineerTo>
+<item key="3C2AB0E3-E347-0C1F-91DB-75BA82BFD51D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,,8</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pwd" id="C4782A3C-81A9-9ABD-7892-0A95C985B407">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 08:25:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[User's password which should be at least longer than 8 for secure reason.]]></commentInRDBMS>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<engineerTo>
+<item key="3C2AB0E3-E347-0C1F-91DB-75BA82BFD51D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_id" id="27B2E2F1-6434-88DC-B261-58BEE1D9C3A1">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 08:45:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[User id used to identied by one sepecifed user.]]></commentInRDBMS>
+<generatorID>D7C31C63-54FF-3651-9894-096AF75C15F3</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<engineerTo>
+<item key="3C2AB0E3-E347-0C1F-91DB-75BA82BFD51D" value="true"/>
+</engineerTo>
+<referedAttribute>ED5408F3-89BF-2E33-9816-2C09262EF48C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,,8</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1CA7B804-2880-3B07-CD46-67AC488563A4" name="PASSWORD_PK">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 08:23:17 UTC</createdTime>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<engineerTo>
+<item key="3C2AB0E3-E347-0C1F-91DB-75BA82BFD51D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9BB4357D-3BEE-8D7F-ED76-6EEABA72E26C</attributeRef>
+<attributeRef>27B2E2F1-6434-88DC-B261-58BEE1D9C3A1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

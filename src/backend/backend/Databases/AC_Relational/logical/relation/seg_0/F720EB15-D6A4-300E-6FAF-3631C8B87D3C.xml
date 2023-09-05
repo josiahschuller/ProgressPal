@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="goal_activity" directorySegmentName="seg_0" id="F720EB15-D6A4-300E-6FAF-3631C8B87D3C">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 08:58:54 UTC</createdTime>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<engineerTo>
+<item key="3C2AB0E3-E347-0C1F-91DB-75BA82BFD51D" value="true"/>
+</engineerTo>
+<sourcePk>D55CD90B-6EA8-80C6-244A-B39162726D86</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>is assigned</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>719FF16F-EB2B-044A-A496-DE564BF6C47F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>531B4EEB-AD45-D231-1AF6-AC0FD248BB2E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

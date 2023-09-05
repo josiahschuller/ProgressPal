@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="573524A5-F729-C8C2-AD14-EAC9D0941FEA" name="USER">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<generatorID>B1116FC0-A818-F1A3-F094-AB0158DE6FBA</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="8604EA1D-31CE-51D7-0930-CFDDB917B0E4">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[User id used to identied by one sepecifed user.]]></commentInRDBMS>
+<generatorID>ED5408F3-89BF-2E33-9816-2C09262EF48C</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_username" id="CDDCE174-6120-D460-9A25-E5BB8A1FC502">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[user_username which is created by users.]]></commentInRDBMS>
+<generatorID>C7FA49A5-417F-A702-12EE-B41BD933BC0B</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>16</dataTypeScale>
+<ownDataTypeParameters>,,16</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_email" id="E1D1502C-77ED-0B68-F271-5BBA71B21CF4">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[user's email.]]></commentInRDBMS>
+<generatorID>5C676823-BC70-1A77-DBC6-ACDFB19D6FD7</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D0B6A0A2-4628-0F0E-170B-2436C8E47F69" name="USER_PK">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<generatorID>C5F2306A-6285-DC1E-D33B-6B25362AF75C</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8604EA1D-31CE-51D7-0930-CFDDB917B0E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

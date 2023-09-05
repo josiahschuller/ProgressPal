@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="password_user" directorySegmentName="seg_0" id="D7C31C63-54FF-3651-9894-096AF75C15F3">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 08:45:19 UTC</createdTime>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<engineerTo>
+<item key="3C2AB0E3-E347-0C1F-91DB-75BA82BFD51D" value="true"/>
+</engineerTo>
+<sourcePk>1CA7B804-2880-3B07-CD46-67AC488563A4</sourcePk>
+<targetPk>C5F2306A-6285-DC1E-D33B-6B25362AF75C</targetPk>
+<dominantRole>B1116FC0-A818-F1A3-F094-AB0158DE6FBA</dominantRole>
+<identifying>true</identifying>
+<nameOnSource> belong</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FB52B50C-221E-17E7-3AED-ADC4919697DE</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>B1116FC0-A818-F1A3-F094-AB0158DE6FBA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

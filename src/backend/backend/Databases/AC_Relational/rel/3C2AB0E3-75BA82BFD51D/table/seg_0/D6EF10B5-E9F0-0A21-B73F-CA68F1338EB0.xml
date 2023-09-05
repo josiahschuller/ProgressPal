@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D6EF10B5-E9F0-0A21-B73F-CA68F1338EB0" name="ACTIVITY">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<generatorID>531B4EEB-AD45-D231-1AF6-AC0FD248BB2E</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="activity_id" id="E8720B5A-E697-81C8-075E-EAB8685CC5E9">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[The activity id used to specified to one unique activity (even with same name).]]></commentInRDBMS>
+<generatorID>9DD1F336-A33E-0A90-7470-4826915D447C</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activity_name" id="37699DA6-EB13-4DC8-198E-A0107D5947BC">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Activity name]]></commentInRDBMS>
+<generatorID>F2E2F2AD-88E0-EE0E-734D-DB2F95453FAC</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activity_desc" id="F0972A1D-C805-FE7D-13BB-CF120F58FB69">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[activity descripiton]]></commentInRDBMS>
+<generatorID>3ADC4AD8-F205-71B7-C7C4-2DA4BADF3FE7</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activity_impact" id="3FC4C006-A749-4D56-2955-F44983053637">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[the impact of activity.]]></commentInRDBMS>
+<generatorID>730E8D53-1C71-2241-00B2-783743502219</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="goal_id" id="4F4FBD84-910E-FF84-C7C7-74E97151ECA1">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Goal id used to identified a specified goal]]></commentInRDBMS>
+<generatorID>22ED4307-0A88-222A-F8E4-17ADEB5AE1E0</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA6F6C06-7566-7837-69FD-6E67D799F1AC" referredColumn="4A7AAEDB-8C0E-B5DD-CBBF-38DDDFD7332F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED012179-7D3F-D5F4-C98A-6C114521739B" name="ACTIVITY_PK">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<generatorID>5AA6BD41-16B2-44CE-64E1-D1E546083C4A</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8720B5A-E697-81C8-075E-EAB8685CC5E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04FC6828-BBF3-6B54-9F2D-8D9BDE048745" name="goal_activity">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<generatorID>F720EB15-D6A4-300E-6FAF-3631C8B87D3C</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F4FBD84-910E-FF84-C7C7-74E97151ECA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

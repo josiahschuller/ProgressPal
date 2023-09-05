@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="55C111BF-6027-BCC5-774C-2D6A441EB756" name="PASSWORD">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<generatorID>FB52B50C-221E-17E7-3AED-ADC4919697DE</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="password_id" id="C62C849E-5C65-4B18-8A0E-BC6D43432690">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[The password id is unique and each only identified by one password which belong to one user.]]></commentInRDBMS>
+<generatorID>9BB4357D-3BEE-8D7F-ED76-6EEABA72E26C</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pwd" id="09FF35D3-A55C-D2C9-8298-774126C446DF">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[User's password which should be at least longer than 8 for secure reason.]]></commentInRDBMS>
+<generatorID>C4782A3C-81A9-9ABD-7892-0A95C985B407</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="2D221E0C-6E34-0D43-AC01-9309411A1CB4">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[User id used to identied by one sepecifed user.]]></commentInRDBMS>
+<generatorID>27B2E2F1-6434-88DC-B261-58BEE1D9C3A1</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1AA5B307-8A74-7BC5-B554-802CF84550A1" referredColumn="8604EA1D-31CE-51D7-0930-CFDDB917B0E4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F78DB36B-9A93-9B52-66E3-C842FC0DD25B" name="PASSWORD_PK">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<generatorID>1CA7B804-2880-3B07-CD46-67AC488563A4</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C62C849E-5C65-4B18-8A0E-BC6D43432690"/>
+<colUsage columnID="2D221E0C-6E34-0D43-AC01-9309411A1CB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D40234E5-1DDD-FCBF-F440-7F5632502879" name="PASSWORD__IDX">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>D7C31C63-54FF-3651-9894-096AF75C15F3</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="2D221E0C-6E34-0D43-AC01-9309411A1CB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7975BBA1-F027-9BE9-5107-4BDDF707EBB0" name="password_user">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<generatorID>D7C31C63-54FF-3651-9894-096AF75C15F3</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D221E0C-6E34-0D43-AC01-9309411A1CB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

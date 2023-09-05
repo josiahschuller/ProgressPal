@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FA6F6C06-7566-7837-69FD-6E67D799F1AC" containerWithKeyObject="D6EF10B5-E9F0-0A21-B73F-CA68F1338EB0" localFKIndex="04FC6828-BBF3-6B54-9F2D-8D9BDE048745" name="goal_activity">
+<createdBy>bottleman</createdBy>
+<createdTime>2023-02-26 09:06:53 UTC</createdTime>
+<generatorID>F720EB15-D6A4-300E-6FAF-3631C8B87D3C</generatorID>
+<ownerDesignName>AC_Relational</ownerDesignName>
+<referredTableLongName>GOAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E5B0CBC4-BBB4-201C-B5BE-A86CDB3386F3</referredTableID>
+<keyObject>BB7B5B39-1359-7D03-B28E-7198A3499736</keyObject>
+<referredKeyID>BB7B5B39-1359-7D03-B28E-7198A3499736</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>goal_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
