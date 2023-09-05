@@ -1,6 +1,6 @@
 # ProgressPal
 
-University project for FIT3161 and FIT3162.
+University project for FIT3161 and FIT3162 created in semester 1 2023.
 
 Co-authors: Ho Yuen Chan, Jovana Dragas, Sujin Lee
 
